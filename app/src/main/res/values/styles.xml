@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme2</item>
+    </style>
+
+    <style name="CheckboxStyle" parent="AppTheme">
+        <item name="colorAccent">@color/colorAccent</item>  // for checked
+        <item name="android:textColorSecondary">@color/grey</item>  // for unchecked
+    </style>
+
+<!--    <style name="AppBottomSheetDialogTheme"-->
+<!--        parent="Theme.Design.Light.BottomSheetDialog">-->
+<!--        <item name="bottomSheetStyle">@style/AppModalStyle</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppModalStyle"-->
+<!--        parent="Widget.Design.BottomSheet.Modal">-->
+<!--        <item name="android:background">@drawable/bg_bottomsheet</item>-->
+<!--    </style>-->
+
+    <style name="AppBottomSheetDialogTheme2"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle2</item>
+    </style>
+
+    <style name="AppModalStyle2"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_solid_round_top</item>
+    </style>
+
+    <style name="ProgressBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_dropdown</item>
+    </style>
+
+</resources>

@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/transpBlack60"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnShg"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="@dimen/_37sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:background="@drawable/bg_call"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/icon_call" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@drawable/bg_speaker"
+            android:padding="@dimen/_4sdp"
+            android:visibility="gone"
+            android:src="@drawable/icon_speaker" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_solid_round_top">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pickup"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <ImageView
+                        android:id="@+id/icClose"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_close"
+                        android:padding="@dimen/_3sdp"
+                        app:tint="@color/grey_500"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvNamePassenger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_17sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey_500"/>
+
+                <LinearLayout
+                    android:id="@+id/llTapCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/tap_vmp_card2"
+                        android:visibility="gone"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:background="@drawable/bg_circle_border_primarry"
+                        android:src="@drawable/icon_tap_card"
+                        android:padding="@dimen/_30sdp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_15sdp"/>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/_20sdp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dip"
+                            android:background="@color/grey"
+                            android:layout_gravity="center_vertical"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:text="@string/or"
+                            android:fontFamily="@font/poppins_regular"
+                            android:background="@color/white"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black50"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:visibility="gone"
+                        android:background="@drawable/bg_circle_darkgreen"
+                        android:padding="@dimen/_17sdp"
+                        android:src="@drawable/icon_issue_card"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/issue_new_card"
+                        android:visibility="gone"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etCardNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_ed_corner"
+                        android:hint="@string/enter_card_number"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_7sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCardDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/bg_ed_corner"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nfc_card_number"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/grey_500"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvCardNumber"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:gravity="right|center_vertical"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:fontFamily="@font/poppins_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/bg_ed_corner"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_holder_name"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/grey_500"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvName"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:gravity="right|center_vertical"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:fontFamily="@font/poppins_medium" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/nfclayout"
+                        android:visibility="gone"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/fragment_picc_detect_m_keytype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A" />
+
+                            <EditText
+                                android:id="@+id/fragment_picc_detect_m_blocknum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="18"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/fragment_picc_detect_m_password"
+                                android:layout_width="116dp"
+                                android:layout_height="19dp"
+                                android:text="D0A1C9B2A786" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/fragment_picc_detect_m_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="result:"
+                            android:padding="10dp"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/bg_ed_corner"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:paddingRight="@dimen/_8sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="wrap_content"
+                            android:text="@string/available_balance"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/grey_500"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvBalance"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:gravity="right|center_vertical"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:fontFamily="@font/poppins_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/bg_ed_corner"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_4sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/location"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/grey_500"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinLocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_minus12sdp"
+                                android:layout_marginBottom="@dimen/_minus9sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/poppins_regular"
+                                android:spinnerMode="dropdown"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                android:theme="@style/AppTheme" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/icon_down_arrrow" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_primary_round_small"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_6sdp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/icon_right"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:text="@string/submit"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/llBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/add_amount_C"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_ed_corner"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:padding="@dimen/_8sdp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:text="@string/inr"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_17sdp"
+                                android:fontFamily="@font/poppins_bold" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/etAmount"
+                                android:maxLines="1"
+                                android:imeOptions="actionNext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:hint="@string/enter_amount"
+                                android:maxLength="5"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingLeft="@dimen/_4sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTopUpValue1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="0.25"
+                                android:background="@color/issue_card"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_1sdp"
+                                android:text="20"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/poppins_medium" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTopUpValue2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="0.25"
+                                android:background="@color/issue_card"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_1sdp"
+                                android:text="50"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/poppins_medium" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTopUpValue3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="0.25"
+                                android:background="@color/issue_card"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_1sdp"
+                                android:text="100"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/poppins_medium" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTopUpValue4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_weight="0.25"
+                                android:background="@color/issue_card"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_1sdp"
+                                android:text="200"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/poppins_medium" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/chk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:checked="false"
+                            android:layout_marginRight="@dimen/_14sdp"
+                            android:layoutDirection="rtl"
+                            android:theme="@style/CheckboxStyle"
+                            android:text="@string/collect_payment"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTapcards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_20sdp">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dip"
+                                android:background="@color/grey"
+                                android:layout_gravity="center_vertical"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:text="@string/or"
+                                android:background="@drawable/bg_circle_white"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/black50"
+                                android:textSize="@dimen/_10sdp" />
+
+                        </FrameLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llTapOtherCard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                >
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/_70sdp"
+                                    android:layout_height="@dimen/_70sdp"
+                                    android:padding="@dimen/_15sdp"
+                                    android:src="@drawable/icon_other_card"
+                                    android:background="@drawable/bg_circle_primary"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tap_other_card2"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:textSize="@dimen/_15sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llTopupCard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:layout_marginLeft="@dimen/_40sdp"
+                                android:orientation="vertical"
+                                >
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/_70sdp"
+                                    android:layout_height="@dimen/_70sdp"
+                                    android:background="@drawable/bg_circle_darkgreen"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingRight="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_15sdp"
+                                    android:paddingBottom="@dimen/_7sdp"
+                                    android:src="@drawable/icon_topup"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/topup_card"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:textSize="@dimen/_15sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_30sdp">
+
+                    <LinearLayout
+                        android:id="@+id/llBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:visibility="gone"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:padding="@dimen/_7sdp"
+                            android:background="@drawable/bg_prev"
+                            android:src="@drawable/icon_prev"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/back"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llNext"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/bg_next"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:src="@drawable/icon_next" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/proceed"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

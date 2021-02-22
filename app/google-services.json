@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "225601480197",
+    "firebase_url": "https://vmp-driver.firebaseio.com",
+    "project_id": "vmp-driver",
+    "storage_bucket": "vmp-driver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225601480197:android:69eabd54984e34f3ae5e6c",
+        "android_client_info": {
+          "package_name": "app.vmp.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225601480197-flkp1bfkni8cq3vplpvm980cs75g64v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlcZVrrNFejq06DuGWUaniXfUaPskfkCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225601480197-flkp1bfkni8cq3vplpvm980cs75g64v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

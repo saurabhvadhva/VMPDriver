@@ -1,0 +1,133 @@
+<resources>
+
+    <string name="app_name">VmpDriver</string>
+    <string name="no_internet">No internet</string>
+    <string name="smthng_wrong">इंटरनेट उपलब्ध नहीं है </string>
+    <string name="card_not_found">अवैध कार्ड संख्या</string>
+    <string name="card_assigned"> कार्ड पहले ही किसी अन्य यात्री को जारी किया गया </string>
+    <string name="mobile_number_m">मोबाइल नंबर *</string>
+    <string name="age">आयु </string>
+    <string name="gender">लिंग </string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="proceed">आगे बढ़ें</string>
+    <string name="msg_location">कृपया स्थान चुनें</string>
+    <string name="select_regi_number_lbl">पंजीकरण \ n का चयन करें</string>
+    <string name="select_regi_number">कृपया अपना वाहन पंजीकरण नंबर चुनें</string>
+    <string name="resend_otp">OTP पुनः भेजें</string>
+    <string name="resend_otp_lable">OTP पुनः भेजें</string>
+
+    <string name="gallery">गेलरी</string>
+    <string name="camera">कैमरा</string>
+
+    <string name="start_trip">ट्रिप शुरू करें</string>
+    <string name="end_trip">ट्रिप समाप्त करें</string>
+    <string name="directions">दिशा-निर्देश</string>
+    <string name="call_shg">SHG को कॉल करे</string>
+    <string name="on_board">सवारी बिठाये</string>
+    <string name="drop_off">सवारी उतारे</string>
+    <string name="passenger_name">यात्री का नाम *</string>
+    <string name="add_passenger">यात्री जोड़ें</string>
+    <string name="or">या</string>
+    <string name="nfc_card_number">एनएफसी कार्ड नंबर</string>
+    <string name="card_holder_name">कार्डधारक का नाम</string>
+    <string name="card_holder_name_m">कार्डधारक का नाम *</string>
+    <string name="available_balance">उपलब्ध शेष राशि</string>
+    <string name="total_payment">कुल किराया</string>
+    <string name="inr">₹</string>
+    <string name="submit">प्रस्तुत</string>
+    <string name="add_amount_C">राशि जोड़ें</string>
+    <string name="add_photo">यात्री छवि जोड़ें*</string>
+    <string name="msg_insificient">कार्ड में अपर्याप्त राशि</string>
+    <string name="profession">व्यवसाय</string>
+    <string name="location">स्थान</string>
+    <string name="district">जिला</string>
+    <string name="taluka">तालुका</string>
+    <string name="village">गाँव</string>
+    <string name="aadhar_number">आधार कार्ड नंबर</string>
+
+    <string name="welcome">स्वागत है,</string>
+    <string name="todays_trip">आज की यात्राएँ</string>
+    <string name="todays_trip2">आज की यात्राएँ</string>
+    <string name="issue_card">कार्ड जारी करें</string>
+    <string name="topup_card">टॉप - अप कार्ड</string>
+    <string name="helpline">हेल्पलाइन पर कॉल करें</string>
+    <string name="swipe_up">अगली यात्रा देखने के लिए ऊपर स्वाइप करें</string>
+    <string name="swipe_up_passenger">अगले यात्री को देखने के लिए ऊपर स्वाइप करें</string>
+    <string name="terms_condi"><u>नियम और शर्तें</u></string>
+
+    <string name="msg_entr_mbl">कृपया मोबाइल नंबर दर्ज करें</string>
+    <string name="msg_entr_vdl_mbl">कृपया मान्य मोबाइल नंबर दर्ज करें</string>
+    <string name="msg_entr_vdl_otp">कृपया 5 अंकों का ओटीपी दर्ज करें</string>
+
+    <string name="start_date">प्रारम्भ तिथि</string>
+    <string name="start_time">प्रारम्भ का समय</string>
+    <string name="trip_name">मार्ग का नाम</string>
+    <string name="passengerCount">यात्री की संख्या</string>
+    <string name="collect_payment">क्या आपने भुगतान एकत्र किया है</string>
+    <string name="start_point">प्रारंभ स्थान</string>
+    <string name="start_location">प्रारंभ स्थान</string>
+    <string name="end_point">अंतिम स्थान</string>
+    <string name="end_location">अंतिम स्थान</string>
+    <string name="next_point">अगला स्थान:</string>
+
+    <string name="issue_card2">कार्ड जारी करें</string>
+    <string name="topup_card2">टॉप - अप कार्ड</string>
+    <string name="back">वापस जाएँ</string>
+    <string name="Next">आगे बढ़े</string>
+    <string name="issue_new_card">नया कार्ड जारी करें</string>
+    <string name="tap_vmp_card2"> कार्ड टैप करें</string>
+    <string name="enter_amount">राशि दर्ज करें या राशि चुनें</string>
+    <string name="enter_card_number">कार्ड नंबर दर्ज करें</string>
+    <string name="pickup">पिकअप </string>
+    <string name="tap_other_card2">अन्य कार्ड टैप करें</string>
+    <string name="select_lang">Please select language</string>
+    <string name="select_lang_hindi">कृपया भाषा का चयन करें</string>
+    <string name="hindi">हिंदी</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="english">English</string>
+    <string name="join_vmp_community">VMP समुदाय से जुड़ें</string>
+    <string name="please_enter_mobile">कृपया अपना  मोबाइल नंबर दर्ज करें</string>
+    <string name="please_enter_sloc">कृपया प्रारंभ स्थान दर्ज करें</string>
+    <string name="please_enter_eloc">कृपया समाप्ति स्थान दर्ज करें</string>
+    <string name="please_enter_loc_match">प्रारंभ और समाप्ति स्थान समान नहीं हो सकते</string>
+    <string name="please_select_village">कृपया गाँव का चयन करें</string>
+    <string name="please_add_photo">कृपया फोटो जोड़ें</string>
+    <string name="msg_payment">कृपया चयन करें, भुगतान प्राप्त हुआ या नहीं</string>
+    <string name="please_enter_card_number">कृपया कार्ड नंबर दर्ज करें</string>
+    <string name="Available_balance">उपलब्ध कार्ड बैलेंस कम है। कृपया पहले कार्ड को टॉप-अप करें</string>
+    <string name="please_enter_amount">कृपया राशि दर्ज करें</string>
+    <string name="please_enter_name">कृपया नाम दर्ज करें</string>
+    <string name="please_enter_otp">कृपया अपने नंबर पर प्राप्त ओटीपी दर्ज करें</string>
+    <string name="enter_mobile">मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_otp2">OTP दर्ज करें</string>
+    <string name="logout_msg">क्या आप लॉग आउट करना चाहते हैं?</string>
+    <string name="end_trip_msg">क्या आप वाकई इस ट्रिप को समाप्त करना चाहते हैं?</string>
+
+    <string name="nfc_not_found">NFC कार्ड नहीं मिला । कृपया डिवाइस के किनारे एनएफसी कार्ड संलग्न करें फिर ठीक पर क्लिक करें</string>
+    <string name="attach_nfc">कृपया डिवाइस के किनारे NFC कार्ड संलग्न करें.</string>
+    <string name="ok">ठीक</string>
+        <string name="enable_location">कृपया स्थान सक्षम करें और पुनः प्रयास करें</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें...</string>
+
+    <string name="deboard_passenger" >सभी यात्री को डिबोर्ड करें और फिर पुनः प्रयास करें</string>
+    <string name="deboard_msg" >यात्री सफलतापूर्वक चला गया</string>
+    <string name="topuop_pending" >टॉप अप को सर्वर में अपडेट किया जा रहा है, कृपया प्रतीक्षा करें।</string>
+    <string name="security_amount" >सुरक्षा राशि</string>
+    <string name="security_amount_msg" >दर्ज राशि सुरक्षा राशि से कम है।</string>
+    <string name="add_expense" >ऑपरेटिंग खर्च जोड़ें</string>
+    <string name="expense_date" >व्यय तिथि</string>
+    <string name="fuel_cost" >ईंधन खर्चा</string>
+    <string name="vehicle_no" >वाहन सं</string>
+    <string name="fuel_amt" >ईंधन राशि(L)</string>
+    <string name="maintenance" >रखरखाव</string>
+    <string name="insurance" >बीमा</string>
+    <string name="pollution" >प्रदूषण</string>
+    <string name="other_costs" >अन्य लागत</string>
+    <string name="remarks" >टिप्पणियों</string>
+
+    <string name="msg_vehicle" >कृपया वाहन सं। का चयन करें</string>
+    <string name="msg_cost" >कृपया कम से कम एक लागत जोड़ें</string>
+    <string name="add_operating_expense" ><u>ऑपरेटिंग खर्च जोड़ें</u></string>
+
+</resources>

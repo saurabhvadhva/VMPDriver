@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:background="@drawable/bg_prev"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/icon_prev" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/add_expense"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_500"
+                    android:layout_weight="0.35"
+                    android:text="@string/expense_date"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:alpha="0.85"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="0.65"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/bg_ed_corner"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_500"
+                        android:layout_weight="0.35"
+                        android:text="@string/vehicle_no"
+                        android:textSize="@dimen/_13sdp"/>
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:layout_width="0dp"
+                        style="@style/SpinnerTheme"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        android:background="@drawable/bg_ed_corner"
+                        android:id="@+id/spinVehicle"
+                        android:padding="@dimen/_8sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/icon_down_arrrow" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_500"
+                    android:layout_weight="0.35"
+                    android:text="@string/fuel_cost"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etFuelCost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:alpha="0.85"
+                    android:layout_weight="0.65"
+                    android:padding="@dimen/_8sdp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bg_ed_corner"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_500"
+                    android:layout_weight="0.35"
+                    android:text="@string/fuel_amt"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etFuelAmt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:alpha="0.85"
+                    android:layout_weight="0.65"
+                    android:padding="@dimen/_8sdp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bg_ed_corner"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_500"
+                    android:layout_weight="0.35"
+                    android:text="@string/maintenance"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etMaintenance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:alpha="0.85"
+                    android:layout_weight="0.65"
+                    android:padding="@dimen/_8sdp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bg_ed_corner"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_500"
+                    android:layout_weight="0.35"
+                    android:text="@string/insurance"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etInsurance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:alpha="0.85"
+                    android:layout_weight="0.65"
+                    android:padding="@dimen/_8sdp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bg_ed_corner"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_500"
+                    android:layout_weight="0.35"
+                    android:text="@string/pollution"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPollution"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:alpha="0.85"
+                    android:layout_weight="0.65"
+                    android:padding="@dimen/_8sdp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bg_ed_corner"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_500"
+                    android:layout_weight="0.35"
+                    android:text="@string/other_costs"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etOtherCosts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:alpha="0.85"
+                    android:layout_weight="0.65"
+                    android:padding="@dimen/_8sdp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bg_ed_corner"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_500"
+                    android:layout_weight="0.35"
+                    android:text="@string/remarks"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etRemarks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:alpha="0.85"
+                    android:layout_weight="0.65"
+                    android:padding="@dimen/_8sdp"
+                    android:inputType="text"
+                    android:background="@drawable/bg_ed_corner"
+                    android:textSize="@dimen/_13sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProceed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/bg_next"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:src="@drawable/icon_next" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/proceed"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

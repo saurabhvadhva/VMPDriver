@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.vmp.driver">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- inserted by DMT !-->
+    <uses-permission android:name="android.permission.NFC" />
+
+
+    <application
+        android:name=".utils.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="app.vmp.driver"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider" />
+        </provider>
+
+        <activity android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.LanguageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AddExpenseActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AddPassengerActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.AddTopUpActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.IssueCardActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.OnBoardActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.DeBoardActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.OTPActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.RegiNumberNewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TodayTripActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TripActiity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name=".utils.LocationService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

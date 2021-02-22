@@ -1,0 +1,133 @@
+<resources>
+
+    <string name="app_name">VmpDriver</string>
+    <string name="no_internet">No internet</string>
+    <string name="smthng_wrong">Something went wrong</string>
+    <string name="card_not_found">Invalid card number</string>
+    <string name="card_assigned"> Card already issued to another passenger</string>
+    <string name="mobile_number_m">Mobile Number *</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="proceed">Proceed</string>
+    <string name="msg_location">Please select Location</string>
+    <string name="select_regi_number_lbl">Select Registration\nNumber</string>
+    <string name="select_regi_number">Please select Registration number\nof your vehicle</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="resend_otp_lable">Resend OTP in</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+
+    <string name="start_trip">Start Trip</string>
+    <string name="end_trip">End Trip</string>
+    <string name="directions">Directions</string>
+    <string name="call_shg">Call SHG</string>
+    <string name="on_board">On-Board</string>
+    <string name="drop_off">Drop-Off</string>
+    <string name="passenger_name">Passenger Name *</string>
+    <string name="add_passenger">Add Passenger</string>
+    <string name="or">OR</string>
+    <string name="nfc_card_number">NFC Card Number</string>
+    <string name="card_holder_name">Card Holder\'s Name</string>
+    <string name="card_holder_name_m">Card Holder\'s Name *</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="total_payment">Total Fare</string>
+    <string name="inr">₹</string>
+    <string name="submit">Submit</string>
+    <string name="add_amount_C">ADD AMOUNT</string>
+    <string name="add_photo">Add Passenger image*</string>
+    <string name="msg_insificient">Insuficient Balance in Card</string>
+    <string name="profession">Profession</string>
+    <string name="location">Location</string>
+    <string name="district">District</string>
+    <string name="taluka">Taluka</string>
+    <string name="village">Village</string>
+    <string name="aadhar_number">AADHAR Card Number</string>
+
+    <string name="welcome">Welcome,</string>
+    <string name="todays_trip">Today\'s\nTrip</string>
+    <string name="todays_trip2">Today\'s Trip</string>
+    <string name="issue_card">Issue\nCard</string>
+    <string name="topup_card">Topup\nCard</string>
+    <string name="helpline">Call Helpline</string>
+    <string name="swipe_up">Swipe up to see next trip</string>
+    <string name="swipe_up_passenger">Swipe up to see next passenger</string>
+    <string name="terms_condi"><u>Terms and conditions</u></string>
+
+    <string name="msg_entr_mbl">Please enter mobile number</string>
+    <string name="msg_entr_vdl_mbl">Please enter valid mobile number</string>
+    <string name="msg_entr_vdl_otp">Please enter 5 digit OTP</string>
+
+    <string name="start_date">Start Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="trip_name">Route Name</string>
+    <string name="passengerCount">Passenger Count</string>
+    <string name="collect_payment">Have you collected payment</string>
+    <string name="start_point">Start Point</string>
+    <string name="start_location">Start Location</string>
+    <string name="end_point">End Point</string>
+    <string name="end_location">End Location</string>
+    <string name="next_point">Next Point:</string>
+
+    <string name="issue_card2">Issue Card</string>
+    <string name="topup_card2">Topup Card</string>
+    <string name="back">Back</string>
+    <string name="Next">Next</string>
+    <string name="issue_new_card">Issue New Card</string>
+    <string name="tap_vmp_card2">Tap VMP Card</string>
+    <string name="enter_amount">Enter or choose amount</string>
+    <string name="enter_card_number">Enter card number</string>
+    <string name="pickup">Pickup</string>
+    <string name="tap_other_card2">Tap\nother card</string>
+    <string name="select_lang">Please select language</string>
+    <string name="select_lang_hindi">कृपया भाषा का चयन करें</string>
+    <string name="hindi">हिंदी</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="english">English</string>
+    <string name="join_vmp_community">Join\nVMP Community</string>
+    <string name="please_enter_mobile">Please enter your mobile number</string>
+    <string name="please_enter_sloc">Please enter start locarion</string>
+    <string name="please_enter_eloc">Please enter end locarion</string>
+    <string name="please_enter_loc_match">Start and End location can not be same</string>
+    <string name="please_select_village">Please select Village</string>
+    <string name="please_add_photo">Please add photo</string>
+    <string name="msg_payment">Please select payment received or not</string>
+    <string name="please_enter_card_number">Please card number</string>
+    <string name="Available_balance">Available Card Balance is low . Please Top-up the card first</string>
+    <string name="please_enter_amount">Please enter amount</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_otp">Please enter OTP received on\nyour number</string>
+    <string name="enter_mobile">Enter mobile number</string>
+    <string name="enter_otp2">Enter OTP</string>
+    <string name="logout_msg">Are you sure you want to logout?</string>
+    <string name="end_trip_msg">Are you sure you want to end this Trip?</string>
+
+    <string name="nfc_not_found">NFC Card not found . Please attach NFC Card at the side of device then click ok</string>
+    <string name="attach_nfc">Please attach NFC Card at the side of device.</string>
+    <string name="ok">OK</string>
+    <string name="enable_location">Please enable location and try again</string>
+    <string name="please_wait">Please wait...</string>
+
+    <string name="deboard_passenger" >Deboard all passenger and then try again</string>
+    <string name="deboard_msg" >Passenger deboarded successfully</string>
+    <string name="topuop_pending" >TopUps are being updated to server, please wait.</string>
+    <string name="security_amount" >Security Amount</string>
+    <string name="security_amount_msg" >Entered amount is less than Security Amount.</string>
+    <string name="add_expense" >Add Operating Expense</string>
+    <string name="expense_date" >Expense Date</string>
+    <string name="fuel_cost" >Fuel Cost</string>
+    <string name="vehicle_no" >Vehicle No</string>
+    <string name="fuel_amt" >Fuel Amt(L)</string>
+    <string name="maintenance" >Maintenance</string>
+    <string name="insurance" >Insurance</string>
+    <string name="pollution" >Pollution</string>
+    <string name="other_costs" >Other Costs</string>
+    <string name="remarks" >Remarks</string>
+    <string name="msg_vehicle" >Please select Vehicle No</string>
+    <string name="msg_cost" >Please add at least one cost</string>
+    <string name="add_operating_expense" ><u>Add Operating Expense</u></string>
+
+
+</resources>
